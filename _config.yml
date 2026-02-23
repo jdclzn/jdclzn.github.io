@@ -9,7 +9,7 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone: 'Asia/Manila'
+timezone: "Asia/Manila"
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/assets/img/bimo.png'
 #avatar: https://drive.google.com/file/d/1ecjHf44A68mvpmk2N6RwRH1TgLZHfnAC/view
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
