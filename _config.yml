@@ -28,8 +28,8 @@ url: "https://jdaclizon23.github.io"
 github:
   username: jdaclizon23 # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+#twitter:
+#  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -38,11 +38,11 @@ social:
   email: jovanie.daclizon@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://github.com/jdaclizon23 # change to your GitHub homepage
+    # - https://twitter.com/username # change to your Twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/jovanie-daclizon-b752a4189
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +98,8 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://media.licdn.com/dms/image/v2/D5603AQFy7FKLoDAVVg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696338511147?e=1773273600&v=beta&t=RKiDvUz9LvpqBn0CZ-J0V2qYVmOGE-q7JGw65aKWE-c
+#avatar: https://drive.google.com/file/d/1ecjHf44A68mvpmk2N6RwRH1TgLZHfnAC/view
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -109,7 +110,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: giscus # [disqus | utterances | giscus ]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -119,23 +120,23 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: "jdaclizon23/jdaclizon23.github.io"  # your GitHub repo
+    repo_id: "R_kgDORH4chg"                     # Giscus provides this
+    category: "Comments"                        # the Discussion category you created
+    category_id: "DIC_kwDORH4chs4C23vP"            # Giscus provides this
+    mapping: pathname                           # links comment to post URL
+    strict: 0                                   # optional, strict matching
+    input_position: bottom                       # position of comment box
+    lang: en                                    # language
+    reactions_enabled: 1                         # enable reactions 👍
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    env: production # [development | production]
 
 pwa:
   enabled: true # The option for PWA feature (installable)
@@ -145,7 +146,7 @@ pwa:
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+    # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
