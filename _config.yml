@@ -16,7 +16,7 @@ timezone: "Asia/Manila"
 
 title: Drafts & Dragons # the main title
 
-tagline: Slaying blank pages since day one. # it will display as the subtitle
+tagline: Slaying blank pages since day one. A chronicle of software engineering, SaaS craftsmanship, and architectural thinking — sharing lessons from the battlefield of real-world development, one draft at a time.. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/assets/favicon.ico'
 #avatar: https://drive.google.com/file/d/1ecjHf44A68mvpmk2N6RwRH1TgLZHfnAC/view
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
