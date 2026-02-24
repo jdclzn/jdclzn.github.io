@@ -1,0 +1,37 @@
+<!-- The Footer -->
+
+<footer
+        aria-label="Site Info"
+        class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  "
+>
+    <p>
+        {{- '©' }}
+        <time>{{ 'now' | date: '%Y' }}</time>
+
+        {% if site.social.links %}
+        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+        {% else %}
+        <em class="fst-normal">{{ site.social.name }}</em>.
+        {% endif %}
+
+        {% if site.data.locales[include.lang].copyright.brief %}
+        <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="{{ site.data.locales[include.lang].copyright.verbose }}"
+        >
+        {{- site.data.locales[include.lang].copyright.brief -}}
+      </span>
+        {% endif %}
+    </p>
+
+    <p>
+<!--        {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}-->
+        <img src="/assets/img/drafts.svg" style="width:24px;height:24px;vertical-align:middle;margin-left:8px;">
+        Drafts & Dragons
+        <img src="/assets/img/dragons.svg" style="width:24px;height:24px;vertical-align:middle;margin-left:8px;">
+    </p>
+</footer>
