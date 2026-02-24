@@ -14,3 +14,10 @@ gem "html-proofer", "~> 5.0", group: :test
 # gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "jekyll-compose", "~> 0.12.0"
+
+# Grouping jekyll_plugins installation
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+end

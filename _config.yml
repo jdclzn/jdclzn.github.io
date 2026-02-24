@@ -9,14 +9,14 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone: "Asia/Manila"
+timezone: Asia/Manila
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: Drafts & Dragons # the main title
 
-tagline: Slaying blank pages since day one. A chronicle of software engineering, SaaS craftsmanship, and architectural thinking — sharing lessons from the battlefield of real-world development, one draft at a time.. # it will display as the subtitle
+tagline: Slaying blank pages since day one — coding, building, learning, and reflecting on life beyond the keyboard. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -168,6 +168,10 @@ kramdown:
       start_line: 1
 
 collections:
+  projects:
+    output: true       # Set to true to generate HTML pages
+    sort_by: order
+    permalink: /projects/:title  # URL structure
   tabs:
     output: true
     sort_by: order
@@ -225,3 +229,10 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
