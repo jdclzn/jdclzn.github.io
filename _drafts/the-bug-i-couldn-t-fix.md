@@ -10,6 +10,8 @@ slug: the-bug-i-couldn-t-fix
 
 **Drafts & Dragons** — *Field Notes from a Developer Who Learned Not Everything Can Be Debugged*
 
+![Drafts & Dragons](/assets/postbg/clouds.png)
+
 I’ve spent most of my life believing that everything is fixable.
 
 Not easily. Not quickly. But fixable.

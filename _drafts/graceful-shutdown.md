@@ -9,6 +9,8 @@ slug: graceful-shutdown
 ---
 **Drafts & Dragons** — *Field Notes from a Developer at the Edge of Letting Go*
 
+![Drafts & Dragons](/assets/postbg/clouds.png)
+
 In software, a graceful shutdown is the best-case scenario.
 
 It means the system knows it’s about to stop.
