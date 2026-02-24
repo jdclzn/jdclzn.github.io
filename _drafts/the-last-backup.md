@@ -8,7 +8,7 @@ tags: ['personal', 'experience', 'story']
 slug: the-last-backup
 ---
 
-*Drafts & Dragons — Field Notes from a Developer Learning About Irreversible Things*
+**Drafts & Dragons** — *Field Notes from a Developer Learning About Irreversible Things*
 
 ![Drafts & Dragons](/assets/postbg/clouds.png)
 

@@ -8,7 +8,7 @@ tags: ['personal', 'experience', 'story']
 slug: the-bug-i-couldn-t-fix
 ---
 
-> *Drafts & Dragons — Field Notes from a Developer Who Learned Not Everything Can Be Debugged*
+**Drafts & Dragons** — *Field Notes from a Developer Who Learned Not Everything Can Be Debugged*
 
 I’ve spent most of my life believing that everything is fixable.
 
