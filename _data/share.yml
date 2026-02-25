@@ -12,7 +12,7 @@ platforms:
 
   - type: Threads
     icon: "fa-brands fa-square-threads"
-    link: "https://www.threads.net/intent/post?text=TITLE%0AURL"
+    link: "https://www.threads.net/intent/post?text=TITLE%URL"
 
   #  - type: Twitter
   #    icon: "fa-brands fa-square-x-twitter"

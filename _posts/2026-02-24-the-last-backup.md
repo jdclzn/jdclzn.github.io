@@ -6,7 +6,6 @@ date: 2026-02-20 00:00:00 +0800
 last_modified_at: 2026-02-24 00:00:00 +0800
 tags: ['personal', 'experience', 'story']
 slug: the-last-backup
-comments: true
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Learning About Irreversible Things*
