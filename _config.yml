@@ -126,7 +126,7 @@ comments:
     category_id: "DIC_kwDORH4chs4C23vP"         # Giscus provides this
     mapping: pathname                           # links comment to post URL
     strict: 0                                   # optional, strict matching
-    input_position: bottom                      # position of comment box
+    input_position: top                         # position of comment box
     lang: en                                    # language
     reactions_enabled: 1                        # enable reactions 👍
 
