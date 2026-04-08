@@ -49,6 +49,77 @@ Build and validate the site:
 bash tools/test.sh
 ```
 
+## Banner Generation
+
+Generate a blog header banner from the repository root:
+
+```bash
+python3 tools/generate_post_banner.py
+```
+
+Command usage:
+
+```text
+usage: generate_post_banner.py [-h] [--preset {engineering,launch,reflection,signal,summit}] [--output OUTPUT] [--width WIDTH] [--height HEIGHT] [--background BACKGROUND] [--ink INK] [--seed SEED] [--list-presets]
+```
+
+Choose a different preset or output file:
+
+```bash
+python3 tools/generate_post_banner.py --preset summit --output assets/postbg/my-journey.png
+python3 tools/generate_post_banner.py --preset signal --output assets/postbg/ops-metrics.png --seed 7
+python3 tools/generate_post_banner.py --preset engineering --output assets/postbg/systems-design.png --seed 2
+```
+
+Full render example with all generation options:
+
+```bash
+python3 tools/generate_post_banner.py \
+  --preset engineering \
+  --output assets/postbg/engineering-wide.png \
+  --width 1500 \
+  --height 380 \
+  --background '#D3D5D8' \
+  --ink '#000000' \
+  --seed 3
+```
+
+`--list-presets` is a standalone helper flag that prints the available presets and exits:
+
+```bash
+python3 tools/generate_post_banner.py --list-presets
+```
+
+Available presets:
+
+- `launch` for deployment, release, checklist, and operational playbook posts
+- `signal` for metrics, performance, analytics, and engineering trend posts
+- `engineering` for coding workflow, computer science, systems design, and software engineering posts
+- `summit` for challenge, growth, roadmap, and journey-style posts
+- `reflection` for personal, reflective, and human-centered posts
+
+Using `--seed`:
+
+- `--seed` accepts any integer such as `0`, `1`, `7`, or `42`
+- the same preset, seed, size, and colors will generate the same banner every time
+- changing the seed can switch both the overall composition and the smaller pattern details
+- seeds `0`, `1`, `2`, and `3` usually give the most obviously different layout families inside the same preset
+- larger seeds continue to vary the layout, but may sometimes stay in the same visual family with different positioning and pattern changes
+- the default seed is `0`
+
+Example seed variations:
+
+```bash
+python3 tools/generate_post_banner.py --preset launch --seed 0 --output assets/postbg/release-v1.png
+python3 tools/generate_post_banner.py --preset launch --seed 9 --output assets/postbg/release-v2.png
+```
+
+If you are already inside the `tools/` directory, run:
+
+```bash
+python3 generate_post_banner.py
+```
+
 ## Repository Structure
 
 - `_posts/` contains published blog posts
