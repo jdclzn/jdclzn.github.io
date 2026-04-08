@@ -9,7 +9,7 @@ slug: a-developer-s-go-live-spellbook
 comments: true
 ---
 
-**Drafts & Dragons** - *Shipping to production always sounds simple until the dragon wakes up.*
+**Drafts & Dragons** — *Shipping to production always sounds simple until the dragon wakes up.*
 
 ![Go-live checklist banner](/assets/postbg/go-live-spellbook.png)
 
