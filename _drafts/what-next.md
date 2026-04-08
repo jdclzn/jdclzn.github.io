@@ -6,10 +6,12 @@ last_modified_at: '2026-02-25 00:00:00 +0800'
 category: Personal
 tags: ['personal','experience','story']
 slug: what-next
+image:
+  path: /assets/postbg/mountains.png
+  alt: Mountain trail banner
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Learning to Manage Systems Beyond Control*
-![Field Notes](/assets/postbg/mountains.png)
 
 The last three entries were about **fatal errors**:
 

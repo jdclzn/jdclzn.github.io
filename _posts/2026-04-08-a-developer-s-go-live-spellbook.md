@@ -7,11 +7,12 @@ categories: ['Engineering Practices','DevOps']
 tags: ['deployment', 'production', 'go-live', 'checklist', 'release-management', 'rollback', 'qa']
 slug: a-developer-s-go-live-spellbook
 comments: true
+image:
+  path: /assets/postbg/go-live-spellbook.png
+  alt: Go-live checklist banner
 ---
 
-**Drafts & Dragons** — *Shipping to production always sounds simple until the dragon wakes up.*
-
-![Go-live checklist banner](/assets/postbg/go-live-spellbook.png)
+**Drafts & Dragons** - *Shipping to production always sounds simple until the dragon wakes up.*
 
 
 In every project, there comes a point where development stops being theory and starts becoming real. Real users. Real data. Real pressure. And that is exactly why go-live is never just about clicking deploy. It is about preparation, control, communication, and recovery.

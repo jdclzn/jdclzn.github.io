@@ -6,11 +6,12 @@ date: '2026-02-14 00:00:00 +0800'
 last_modified_at: '2026-02-24 00:00:00 +0800'
 tags: ['personal', 'experience', 'story']
 slug: the-bug-i-couldn-t-fix
+image:
+  path: /assets/postbg/clouds.png
+  alt: Clouded halftone banner
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Who Learned Not Everything Can Be Debugged*
-
-![Drafts & Dragons](/assets/postbg/clouds.png)
 
 I’ve spent most of my life believing that everything is fixable.
 
