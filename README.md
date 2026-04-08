@@ -51,7 +51,7 @@ bash tools/test.sh
 
 ## Banner Generation
 
-Generate a blog header banner from the repository root:
+Generate a PNG blog header banner from the repository root:
 
 ```bash
 python3 tools/generate_post_banner.py
@@ -119,6 +119,19 @@ If you are already inside the `tools/` directory, run:
 ```bash
 python3 generate_post_banner.py
 ```
+
+Use the generated PNG in post front matter like this:
+
+```yaml
+image:
+  path: /assets/postbg/release-dragon.png
+  alt: Release workflow banner
+```
+
+Notes:
+
+- `image.path` is the single banner source used in the post layout, homepage cards, and share metadata.
+- Keep the banner at `1500x380` when possible so it matches the post header layout cleanly.
 
 ## Repository Structure
 

@@ -8,7 +8,7 @@ tags: ['deployment', 'production', 'go-live', 'checklist', 'release-management',
 slug: a-developer-s-go-live-spellbook
 comments: true
 image:
-  path: /assets/postbg/go-live-spellbook.png
+  path: /assets/postbg/graph.png
   alt: Go-live checklist banner
 ---
 

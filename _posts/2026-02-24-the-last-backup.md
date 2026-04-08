@@ -8,7 +8,7 @@ tags: ['personal', 'experience', 'story']
 slug: the-last-backup
 image:
   path: /assets/postbg/clouds.png
-  alt: Clouded halftone banner
+  alt: Memory archive banner
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Learning About Irreversible Things*

@@ -8,7 +8,7 @@ tags: ['personal', 'experience', 'story']
 slug: graceful-shutdown
 image:
   path: /assets/postbg/clouds.png
-  alt: Clouded halftone banner
+  alt: Graceful shutdown banner
 ---
 **Drafts & Dragons** — *Field Notes from a Developer at the Edge of Letting Go*
 

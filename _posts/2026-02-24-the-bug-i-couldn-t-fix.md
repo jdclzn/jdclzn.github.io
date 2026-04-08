@@ -8,7 +8,7 @@ tags: ['personal', 'experience', 'story']
 slug: the-bug-i-couldn-t-fix
 image:
   path: /assets/postbg/clouds.png
-  alt: Clouded halftone banner
+  alt: Debugging systems banner
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Who Learned Not Everything Can Be Debugged*

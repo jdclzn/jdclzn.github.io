@@ -8,7 +8,7 @@ tags: ['personal','experience','story']
 slug: what-next
 image:
   path: /assets/postbg/mountains.png
-  alt: Mountain trail banner
+  alt: Mountain path banner
 ---
 
 **Drafts & Dragons** — *Field Notes from a Developer Learning to Manage Systems Beyond Control*
