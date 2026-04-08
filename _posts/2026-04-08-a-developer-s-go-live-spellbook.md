@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Slaying the Release Dragon - A Practical Pre, Production, and Post-Go-Live Checklist
-date: 2026-04-08 00:00:00 +0800
-last_modified_at: 2026-04-08 00:00:00 +0800
-category: Engineering Practices
+date: '2026-04-08 00:00:00 +0800'
+last_modified_at: '2026-04-08 00:00:00 +0800'
+categories: ['Engineering Practices','DevOps']
 tags: ['deployment', 'production', 'go-live', 'checklist', 'release-management', 'rollback', 'qa']
 slug: a-developer-s-go-live-spellbook
 comments: true

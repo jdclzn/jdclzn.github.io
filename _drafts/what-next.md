@@ -1,8 +1,8 @@
 ---
 layout: post
 title: What Next
-date: 2026-02-25 00:00:00 +0800
-last_modified_at: 2026-02-25 00:00:00 +0800
+date: '2026-02-25 00:00:00 +0800'
+last_modified_at: '2026-02-25 00:00:00 +0800'
 category: Personal
 tags: ['personal','experience','story']
 slug: what-next

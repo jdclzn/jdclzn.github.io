@@ -2,8 +2,8 @@
 layout: post
 title: Graceful Shutdown
 category: Personal
-date: 2026-02-24 00:00:00 +0800
-last_modified_at: 2026-02-24 00:00:00 +0800
+date: '2026-02-24 00:00:00 +0800'
+last_modified_at: '2026-02-24 00:00:00 +0800'
 tags: ['personal', 'experience', 'story']
 slug: graceful-shutdown
 ---
@@ -378,4 +378,3 @@ Forever running.
 Forever part of who I am.
 
 No shutdown can take that away.
-

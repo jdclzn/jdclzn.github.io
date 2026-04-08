@@ -2,8 +2,8 @@
 layout: post
 title: The Bug I Couldn’t Fix
 category: Personal
-date: 2026-02-14 00:00:00 +0800
-last_modified_at: 2026-02-24 00:00:00 +0800
+date: '2026-02-14 00:00:00 +0800'
+last_modified_at: '2026-02-24 00:00:00 +0800'
 tags: ['personal', 'experience', 'story']
 slug: the-bug-i-couldn-t-fix
 ---
@@ -429,4 +429,3 @@ Don’t assume there’s time.
 Because one day, without warning, you’ll discover a bug you can’t fix.
 
 And you’ll spend the rest of your life wishing you had found it sooner.
-
