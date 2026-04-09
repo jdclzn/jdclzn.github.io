@@ -16,7 +16,10 @@
   <!-- Setup Open Graph image -->
 
   {% if page.image %}
-    {% assign src = page.image.path | default: page.image %}
+    {%- capture resolved_src -%}
+      {% include resolve-image-src.html image=page.image %}
+    {%- endcapture -%}
+    {% assign src = resolved_src | strip %}
 
     {% unless src contains '://' %}
       {%- capture img_url -%}
@@ -27,6 +30,8 @@
       {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
 
       {% assign seo_tags = seo_tags | replace: old_url, new_url %}
+    {% else %}
+      {% assign img_url = src %}
     {% endunless %}
 
     {% unless seo_tags contains 'property="og:image"' %}

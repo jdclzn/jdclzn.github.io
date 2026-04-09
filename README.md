@@ -133,6 +133,34 @@ Notes:
 - `image.path` is the single banner source used in the post layout, homepage cards, and share metadata.
 - Keep the banner at `1500x380` when possible so it matches the post header layout cleanly.
 
+## Google Drive Images
+
+Google Drive share pages like `https://drive.google.com/file/d/.../view` should not be embedded directly as image sources. The site now supports Google Drive images in two authoring-friendly ways.
+
+Use a Google Drive banner in post front matter:
+
+```yaml
+image:
+  drive_id: 1la-188wXrmGrqT5pFevlKSu56kaM9usk
+  alt: Knight at dungeon entrance ready for battle
+  source: https://drive.google.com/file/d/1la-188wXrmGrqT5pFevlKSu56kaM9usk/view
+```
+
+You can also keep using `image.path`, and if it is a Google Drive share link the layout will convert it to a direct image URL automatically.
+
+Use a Google Drive file as an iframe embed inside post content:
+
+```liquid
+{% include drive-iframe.html
+  source="https://drive.google.com/file/d/1la-188wXrmGrqT5pFevlKSu56kaM9usk/view?usp=drive_link"
+  title="Knight at dungeon entrance ready for battle"
+  caption="Embedded from Google Drive as an iframe."
+  clickthrough=true
+%}
+```
+
+This converts the Drive share link to the `/preview` URL that Google Drive allows inside an iframe. Add `clickthrough=true` when you want the whole embedded area to open the Drive file in a new tab.
+
 ## Repository Structure
 
 - `_posts/` contains published blog posts

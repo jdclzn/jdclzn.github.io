@@ -1,0 +1,59 @@
+{% assign drive_id = include.id | default: include.drive_id %}
+{% assign source = include.url | default: include.source | default: include.share_url %}
+
+{% if drive_id == nil or drive_id == '' %}
+  {% if source contains 'drive.google.com/file/d/' %}
+    {% assign drive_id = source | split: '/file/d/' | last | split: '/' | first %}
+  {% elsif source contains 'google.com' and source contains 'id=' %}
+    {% assign drive_id = source | split: 'id=' | last | split: '&' | first %}
+  {% endif %}
+{% endif %}
+
+{% if drive_id and drive_id != '' %}
+  {% assign preview_url = 'https://drive.google.com/file/d/' | append: drive_id | append: '/preview' %}
+  {% assign clickthrough = include.clickthrough | default: include.clickable %}
+
+  {% if include.share_url and include.share_url != '' %}
+    {% assign share_url = include.share_url %}
+  {% elsif include.source and include.source != '' %}
+    {% assign share_url = include.source %}
+  {% else %}
+    {% assign share_url = 'https://drive.google.com/file/d/' | append: drive_id | append: '/view' %}
+  {% endif %}
+
+  <figure class="drive-embed" style="--drive-embed-ratio: {{ include.ratio | default: '16 / 9' }};">
+    <div class="drive-embed__frame">
+      <iframe
+        src="{{ preview_url }}"
+        title="{{ include.title | default: include.alt | default: 'Embedded Google Drive file' | xml_escape }}"
+        loading="lazy"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
+
+      {% if clickthrough and share_url %}
+        <a
+          class="drive-embed__overlay"
+          href="{{ share_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ include.overlay_label | default: include.title | default: 'Open embedded Google Drive file' | xml_escape }}"
+        >
+          <span class="drive-embed__badge">{{ include.overlay_text | default: 'Open in Google Drive' }}</span>
+        </a>
+      {% endif %}
+    </div>
+
+    {% if include.caption or share_url %}
+      <figcaption class="text-center pt-2 pb-2 text-muted">
+        {% if include.caption %}{{ include.caption }}{% endif %}
+        {% if include.caption and share_url %} · {% endif %}
+        {% if share_url %}
+          <a href="{{ share_url }}" target="_blank" rel="noopener noreferrer">
+            {{ include.source_label | default: 'Open in Google Drive' }}
+          </a>
+        {% endif %}
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endif %}

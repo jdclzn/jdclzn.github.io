@@ -53,7 +53,7 @@ layout: default
         {% assign card_body_col = '12' %}
 
         {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
+          {% assign src = post.image.path | default: post.image.image | default: post.image %}
 
           {% if post.media_subpath %}
             {% unless src contains '://' %}

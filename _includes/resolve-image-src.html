@@ -1,0 +1,31 @@
+{% assign image = include.image %}
+{% assign src = include.src | default: image.path | default: image.image | default: image %}
+{% assign drive_id = include.drive_id | default: image.drive_id %}
+
+{% if drive_id and drive_id != '' %}
+  {% assign resolved_src = 'https://drive.google.com/uc?export=view&id=' | append: drive_id %}
+{% else %}
+  {% assign resolved_src = src %}
+
+  {% if src and src != '' %}
+    {% if src contains 'drive.google.com/file/d/' %}
+      {% assign extracted_id = src | split: '/file/d/' | last | split: '/' | first %}
+      {% assign resolved_src = 'https://drive.google.com/uc?export=view&id=' | append: extracted_id %}
+    {% elsif src contains 'google.com' and src contains 'id=' %}
+      {% assign extracted_id = src | split: 'id=' | last | split: '&' | first %}
+      {% if extracted_id != src and extracted_id != '' %}
+        {% assign resolved_src = 'https://drive.google.com/uc?export=view&id=' | append: extracted_id %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% if include.absolute %}
+  {% if resolved_src contains '://' %}
+    {{ resolved_src }}
+  {% elsif resolved_src and resolved_src != '' %}
+    {% include media-url.html src=resolved_src subpath=page.media_subpath absolute=true %}
+  {% endif %}
+{% else %}
+  {{ resolved_src }}
+{% endif %}
