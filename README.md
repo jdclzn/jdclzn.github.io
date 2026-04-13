@@ -19,7 +19,6 @@ The goal is simple: create a place where technical writing and personal storytel
 ## Stack
 
 - [Jekyll](https://jekyllrb.com/)
-- [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
 - GitHub Pages
 - Giscus for comments
 
