@@ -1,6 +1,6 @@
 # Drafts & Dragons
 
-Drafts & Dragons is the source for [jdaclizon23.github.io](https://jdaclizon23.github.io), the personal website and blog of Jovanie Daclizon.
+Drafts & Dragons is the source for [jdaclizon23.github.io](https://jdclzn.github.io), the personal website and blog of Jovanie Daclizon.
 
 This website is a writing space shaped by a developer's voice. It blends technical curiosity with personal reflection, using the language of software, systems, debugging, architecture, and failure to talk about both code and life. Some posts are grounded in web development and engineering practice; others are reflective essays about grief, growth, memory, and the human side of building things.
 
