@@ -26,9 +26,9 @@ The goal is simple: create a place where technical writing and personal storytel
 
 This site is deployed with [`pages-deploy.yml`](.github/workflows/pages-deploy.yml).
 
-Because the site depends on `jekyll-theme-chirpy`, the legacy GitHub Pages branch builder cannot build it from the repository source and will fail with `The jekyll-theme-chirpy theme could not be found.` In the repository settings on GitHub, open `Settings -> Pages` and set `Build and deployment -> Source` to `GitHub Actions`.
+Because the site depends on `jekyll-theme-chirpy` and custom local plugins, the legacy GitHub Pages branch builder cannot build it from the repository source and will fail with `The jekyll-theme-chirpy theme could not be found.` In the repository settings on GitHub, open `Settings -> Pages` and set `Build and deployment -> Source` to `GitHub Actions`.
 
-If `Gemfile.lock` is ever committed from a non-Linux machine, add the Linux platform before pushing so the workflow can resolve gems on GitHub-hosted runners:
+When updating `Gemfile.lock` from a non-Linux machine, add the Linux platform before pushing so the workflow can resolve gems on GitHub-hosted runners:
 
 ```bash
 bundle lock --add-platform x86_64-linux
