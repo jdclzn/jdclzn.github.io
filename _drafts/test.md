@@ -39,5 +39,15 @@ and let the site convert them into the right render format.
 
 ---
 
+> Keep Google Drive share links in your post source, and let the site convert them into the right render format.
+{: .prompt-danger }
+```md
+> Keep Google Drive share links in your post source, and let the site convert them into the right render format.
+{: .prompt-success }
+```
+
+---
+
+
 
 
